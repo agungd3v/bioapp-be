@@ -3,17 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "start": "ts-node index.ts",
     "dev": "nodemon index.ts",
     "ts.check": "tsc --project tsconfig.json",
-    "build": "rimraf dist && npx tsc",
-    "add-build": "git add dist"
+    "build": "rimraf dist && npx tsc"
   },
   "pre-commit": [
     "ts.check",
-    "build",
-    "add-build"
+    "build"
   ],
   "author": "agungd3v",
   "license": "ISC",
