@@ -1,9 +1,7 @@
 ## Installation
 
-clone this repository and paste codes below in your html code
-
 ```python
-cp .env.example .env // add port and secret key
+cp .env.example .env # set PORT and SECRET_KEY
 
 npm install
 npm run dev
