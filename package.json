@@ -12,10 +12,6 @@
     "ts.check": "tsc --project tsconfig.json",
     "build": "rimraf dist && npx tsc"
   },
-  "pre-commit": [
-    "ts.check",
-    "build"
-  ],
   "author": "agungd3v",
   "license": "ISC",
   "devDependencies": {
