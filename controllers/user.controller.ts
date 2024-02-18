@@ -2,6 +2,13 @@ import { Request, Response } from "express";
 import database from "../config/database";
 import { findHoroscope } from "../utils/helpers";
 
+type documentType = {
+  photo: string;
+  name: string;
+  birthday: string;
+  gender: string;
+}
+
 const UserController = {
   index: (req: Request, res: Response) => {
     const user = (global as any).user;
@@ -21,7 +28,7 @@ const UserController = {
   },
   update: (req: Request, res: Response) => {
     const user = (global as any).user;
-    const requestData = req.body;
+    const requestData: documentType = req.body;
     
     database.findOne({_id: user._id}, (err, doc) => {
       const horoscope = {horoscope: findHoroscope(requestData.birthday)};

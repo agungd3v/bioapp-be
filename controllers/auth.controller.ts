@@ -1,15 +1,11 @@
 import { Request, Response } from "express";
 import { decrypt, encrypt, sign } from "../utils/crypto";
 import database from "../config/database";
-import { findHoroscope } from "../utils/helpers";
 
 type documentType = {
-  name: string;
-  birthday: string;
   username: string;
   email: string;
   password: string;
-  userAgent: string;
 }
 
 type loginType = {
@@ -22,7 +18,7 @@ const AuthController = {
     const data: documentType = await req.body;
     // check username or email
     database.findOne({$or: [{email: data.email}, {username: data.username}]}, function(err, doc) {
-      const document = {...data, password: encrypt(data.password), horoscope: findHoroscope(data.birthday)}
+      const document = {...data, password: encrypt(data.password)}
 
       if (doc) return res.status(400).json({status: 400, message: "username atau email sudah terdaftar"});
 
