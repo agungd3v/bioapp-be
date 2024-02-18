@@ -16,8 +16,9 @@ export const decrypt = (ecryptedText: string) => {
 }
 
 export const sign = (userKey: any) => {
-  const sign = jwToken.sign(userKey, secret, {expiresIn: moment().endOf("day").diff(moment(), "s")});
-  return sign;
+  const expired = moment().endOf("day").diff(moment(), "s");
+  const sign = jwToken.sign(userKey, secret, {expiresIn: expired});
+  return {signature: sign, expired: expired};
 }
 
 export const verify = (tokenString: string) => {
