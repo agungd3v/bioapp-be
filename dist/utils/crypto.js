@@ -30,4 +30,3 @@ const verify = (tokenString) => {
     return verify;
 };
 exports.verify = verify;
-//# sourceMappingURL=crypto.js.map

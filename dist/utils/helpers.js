@@ -36,4 +36,3 @@ const findHoroscope = (dateString) => {
     return "";
 };
 exports.findHoroscope = findHoroscope;
-//# sourceMappingURL=helpers.js.map

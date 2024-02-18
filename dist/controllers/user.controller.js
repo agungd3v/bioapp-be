@@ -39,4 +39,3 @@ const UserController = {
     }
 };
 exports.default = UserController;
-//# sourceMappingURL=user.controller.js.map

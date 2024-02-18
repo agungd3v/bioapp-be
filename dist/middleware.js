@@ -21,4 +21,3 @@ const middleware = (req, res, next) => {
 const getUser = (user) => user;
 exports.getUser = getUser;
 exports.default = middleware;
-//# sourceMappingURL=middleware.js.map

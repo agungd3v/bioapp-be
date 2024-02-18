@@ -8,4 +8,3 @@ const path_1 = __importDefault(require("path"));
 const storage = path_1.default.dirname(__dirname) + "/storage/database.db";
 const database = new nedb_1.default({ filename: storage, autoload: true, corruptAlertThreshold: 1 });
 exports.default = database;
-//# sourceMappingURL=database.js.map

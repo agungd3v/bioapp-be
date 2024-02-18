@@ -20,4 +20,3 @@ router.use("/api", (0, group_1.group)((router) => {
     router.put("/user", user_controller_1.default.update);
 }));
 exports.default = router;
-//# sourceMappingURL=index.js.map

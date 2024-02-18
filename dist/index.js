@@ -21,4 +21,3 @@ app.use(jsonParser, (req, res, next) => {
 });
 app.use(routes_1.default);
 app.listen(port, () => console.log(`[server]: server is running at :${port}`));
-//# sourceMappingURL=index.js.map

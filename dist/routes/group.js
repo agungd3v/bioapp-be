@@ -10,4 +10,3 @@ exports.group = ((callback) => {
     callback(router);
     return router;
 });
-//# sourceMappingURL=group.js.map
