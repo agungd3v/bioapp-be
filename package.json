@@ -21,8 +21,6 @@
     "@types/nedb": "^1.8.16",
     "@types/node": "^20.11.18",
     "nodemon": "^3.0.3",
-    "pre-commit": "^1.2.2",
-    "rimraf": "^5.0.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
