@@ -8,12 +8,11 @@
     "skipLibCheck": true,
     "moduleResolution": "node",
     "sourceMap": false,
-    "outDir": "dist",
+    "outDir": "./dist",
     "baseUrl": ".",
     "typeRoots": ["./node_modules/@types", "./types"]
   },
   "ts-node": {
-    "esm": true,
-    "experimentalSpecifierResolution": "node"
+    "esm": true
   }
 }
