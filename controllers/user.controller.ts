@@ -7,6 +7,7 @@ type documentType = {
   name: string;
   birthday: string;
   gender: string;
+  interests: string[];
 }
 
 const UserController = {
